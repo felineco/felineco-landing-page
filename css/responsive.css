@@ -33,6 +33,10 @@
 
 /* Tablet */
 @media (max-width: 991px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
     .container {
         max-width: 720px;
         padding: 0 var(--spacing-md);
@@ -49,7 +53,7 @@
 
     /* Hero Section */
     .hero {
-        padding: calc(80px + var(--spacing-2xl)) 0 var(--spacing-2xl);
+        padding: var(--spacing-2xl) 0 var(--spacing-2xl);
     }
 
     .hero-content {
@@ -64,6 +68,11 @@
 
     .hero-subtitle {
         font-size: var(--font-size-base);
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        justify-content: center;
     }
 
     /* Steps */
@@ -103,10 +112,12 @@
         flex-direction: column;
         gap: var(--spacing-lg);
         text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .footer-links {
-        flex-direction: column;
+        flex-direction: row;
         gap: var(--spacing-sm);
     }
 }
@@ -134,7 +145,7 @@
 
     /* Spacing adjustments */
     .hero {
-        padding: calc(80px + var(--spacing-xl)) 0 var(--spacing-xl);
+        padding: var(--spacing-xl) 0 var(--spacing-xl);
     }
 
     section {
@@ -171,7 +182,6 @@
 
     .hero-cta .btn {
         width: 100%;
-        justify-content: center;
     }
 
     /* Phone mockup */
@@ -187,12 +197,6 @@
 
     .step-icon i {
         font-size: 24px;
-    }
-
-    .step-number {
-        width: 24px;
-        height: 24px;
-        font-size: 12px;
     }
 
     /* Feature cards */
@@ -304,7 +308,7 @@
 
     /* Hero adjustments */
     .hero {
-        padding: calc(60px + var(--spacing-xl)) 0 var(--spacing-xl);
+        padding: var(--spacing-xl) 0 var(--spacing-xl);
     }
 
     .hero-content {
@@ -417,7 +421,7 @@
 /* Landscape phone adjustments */
 @media (max-width: 767px) and (orientation: landscape) {
     .hero {
-        padding: calc(60px + var(--spacing-md)) 0 var(--spacing-md);
+        padding: var(--spacing-md) 0 var(--spacing-md);
     }
 
     .hero-content {
