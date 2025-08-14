@@ -20,7 +20,7 @@ jobs:
 
       # Step 2: Validate HTML
       - name: Validate HTML
-        uses: Cyb3r-Jak3/html5validator-action
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
           root: ./
 
