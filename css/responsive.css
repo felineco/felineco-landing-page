@@ -1,0 +1,505 @@
+/* Responsive Design - Mobile First Approach */
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero-title {
+        font-size: 56px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+}
+
+/* Desktop */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .features-grid,
+    .business-grid {
+        gap: var(--spacing-md);
+    }
+
+    .hero-content {
+        gap: var(--spacing-xl);
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+        padding: 0 var(--spacing-md);
+    }
+
+    /* Navigation */
+    .nav {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: calc(80px + var(--spacing-2xl)) 0 var(--spacing-2xl);
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    /* Steps */
+    .steps {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Features */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .feature-card {
+        padding: var(--spacing-lg);
+    }
+
+    /* Business Cards */
+    .business-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .business-card {
+        padding: var(--spacing-lg);
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+}
+
+/* Mobile Large */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* Typography adjustments */
+    .hero-title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-sm);
+    }
+
+    /* Spacing adjustments */
+    .hero {
+        padding: calc(80px + var(--spacing-xl)) 0 var(--spacing-xl);
+    }
+
+    section {
+        padding: var(--spacing-2xl) 0 !important;
+    }
+
+    .section-header {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    /* Header */
+    .nav-wrapper {
+        height: 70px;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 12px 20px;
+        font-size: var(--font-size-sm);
+    }
+
+    .btn-large {
+        padding: 14px 24px;
+        font-size: var(--font-size-base);
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Phone mockup */
+    .phone-mockup {
+        max-width: 250px;
+    }
+
+    /* Steps */
+    .step-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .step-icon i {
+        font-size: 24px;
+    }
+
+    .step-number {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+
+    /* Feature cards */
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .feature-icon i {
+        font-size: 20px;
+    }
+
+    /* Business cards */
+    .business-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .business-icon i {
+        font-size: 24px;
+    }
+
+    /* Video */
+    .video-container {
+        margin: 0 calc(-1 * var(--spacing-sm));
+        border-radius: 0;
+    }
+
+    .play-btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .play-btn i {
+        font-size: 20px;
+    }
+
+    /* Contact form */
+    .contact-content {
+        padding: 0;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 14px;
+        font-size: var(--font-size-sm);
+    }
+
+    /* CTA section text */
+    .cta-content h2 {
+        font-size: 24px;
+    }
+
+    .cta-content p {
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Mobile Small */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    /* Typography */
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    /* Spacing */
+    :root {
+        --spacing-xs: 6px;
+        --spacing-sm: 12px;
+        --spacing-md: 18px;
+        --spacing-lg: 24px;
+        --spacing-xl: 32px;
+        --spacing-2xl: 48px;
+        --spacing-3xl: 64px;
+    }
+
+    section {
+        padding: var(--spacing-xl) 0 !important;
+    }
+
+    /* Header */
+    .nav-wrapper {
+        height: 60px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    /* Hero adjustments */
+    .hero {
+        padding: calc(60px + var(--spacing-xl)) 0 var(--spacing-xl);
+    }
+
+    .hero-content {
+        gap: var(--spacing-lg);
+    }
+
+    .phone-mockup {
+        max-width: 200px;
+    }
+
+    /* Card padding */
+    .feature-card,
+    .business-card {
+        padding: var(--spacing-md);
+    }
+
+    .step {
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* Icons */
+    .step-icon,
+    .business-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .step-icon i,
+    .business-icon i {
+        font-size: 20px;
+    }
+
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .feature-icon i {
+        font-size: 18px;
+    }
+
+    /* Video full width on small screens */
+    .video-container {
+        margin: 0 -12px;
+        border-radius: 0;
+    }
+
+    /* Buttons full width */
+    .hero-cta .btn,
+    .cta-section .btn,
+    .business-card .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: var(--spacing-lg) 0 var(--spacing-sm);
+    }
+
+    .footer-content {
+        gap: var(--spacing-md);
+    }
+
+    .footer-links {
+        gap: var(--spacing-xs);
+    }
+}
+
+/* Mobile Navigation Menu (when implemented) */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--background-white);
+    box-shadow: var(--shadow-medium);
+    z-index: 999;
+    padding: var(--spacing-md);
+}
+
+.mobile-nav.active {
+    display: block;
+}
+
+.mobile-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-nav-list li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.mobile-nav-list a {
+    display: block;
+    padding: var(--spacing-sm) 0;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-nav-list a:hover {
+    color: var(--secondary-color);
+}
+
+/* Landscape phone adjustments */
+@media (max-width: 767px) and (orientation: landscape) {
+    .hero {
+        padding: calc(60px + var(--spacing-md)) 0 var(--spacing-md);
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md);
+        align-items: center;
+    }
+
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .phone-mockup {
+        max-width: 180px;
+    }
+
+    section {
+        padding: var(--spacing-lg) 0 !important;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .phone-mockup img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Accessibility - Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .fade-in,
+    .scale-in {
+        transition: none;
+    }
+}
+
+/* Print styles */
+@media print {
+
+    .header,
+    .mobile-menu-btn,
+    .hero-cta,
+    .cta-section,
+    .contact-section,
+    .footer {
+        display: none;
+    }
+
+    .hero {
+        padding: var(--spacing-lg) 0;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+}
+
+/* Focus styles for accessibility */
+@media (prefers-reduced-motion: no-preference) {
+
+    .btn:focus,
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: 2px solid var(--secondary-color);
+        outline-offset: 2px;
+    }
+}
