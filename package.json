@@ -1,0 +1,16 @@
+{
+  "name": "felineco-landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:felineco/felineco-landing-page.git",
+  "author": "Evan <dthung.y17@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "html-validate": "^10.0.0",
+    "husky": "^9.1.7"
+  },
+  "scripts": {
+    "validate": "html-validate .",
+    "prepare": "husky"
+  }
+}
