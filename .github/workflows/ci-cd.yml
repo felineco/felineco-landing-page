@@ -18,11 +18,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Validate HTML
-      - name: Validate HTML
-        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+      # Step 2: Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          root: ./
+          node-version: "22"
+          cache: "yarn"
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: yarn install
+
+      # Step 4: Validate HTML with Yarn
+      - name: Validate
+        run: yarn validate
 
       # Step 3: Check file structure
       - name: Check required files
@@ -64,7 +73,6 @@ jobs:
           aws s3 sync css/ s3://${{ secrets.S3_BUCKET_NAME }}/css/ --delete --cache-control="max-age=31536000"
           aws s3 sync js/ s3://${{ secrets.S3_BUCKET_NAME }}/js/ --delete --cache-control="max-age=31536000"
           aws s3 sync assets/ s3://${{ secrets.S3_BUCKET_NAME }}/assets/ --delete --cache-control="max-age=31536000"
-          aws s3 cp index.html s3://${{ secrets.S3_BUCKET_NAME }}/index.html --cache-control="no-cache, no-store, must-revalidate"
           aws s3 cp index.html s3://${{ secrets.S3_BUCKET_NAME }}/index.html --cache-control="no-cache, no-store, must-revalidate"
 
       - name: Invalidate CloudFront
