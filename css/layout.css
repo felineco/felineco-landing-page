@@ -311,10 +311,6 @@
     transition: opacity var(--transition-normal);
 }
 
-.video-container:hover .video-overlay {
-    opacity: 0;
-}
-
 .play-btn {
     width: 80px;
     height: 80px;
