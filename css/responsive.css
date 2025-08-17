@@ -219,21 +219,6 @@
         font-size: 24px;
     }
 
-    /* Video */
-    .video-container {
-        margin: 0 calc(-1 * var(--spacing-sm));
-        border-radius: 0;
-    }
-
-    .play-btn {
-        width: 60px;
-        height: 60px;
-    }
-
-    .play-btn i {
-        font-size: 20px;
-    }
-
     /* Contact form */
     .contact-content {
         padding: 0;
@@ -350,11 +335,6 @@
         font-size: 18px;
     }
 
-    /* Video full width on small screens */
-    .video-container {
-        margin: 0 -12px;
-        border-radius: 0;
-    }
 
     /* Buttons full width */
     .hero-cta .btn,

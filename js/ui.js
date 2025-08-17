@@ -1,34 +1,8 @@
 // UI functionality - video player, notifications, animations
 const UI = {
   init() {
-    this.initVideoPlayer();
     this.initScrollAnimations();
     this.addNotificationStyles();
-  },
-
-  initVideoPlayer() {
-    const video = document.querySelector("video");
-    const playBtn = document.querySelector(".play-btn");
-    const videoOverlay = document.querySelector(".video-overlay");
-
-    if (!video || !playBtn) return;
-
-    playBtn.addEventListener("click", () => {
-      video.play();
-      videoOverlay.style.display = "none";
-    });
-
-    video.addEventListener("play", () => {
-      videoOverlay.style.display = "none";
-    });
-
-    video.addEventListener("pause", () => {
-      videoOverlay.style.display = "flex";
-    });
-
-    video.addEventListener("ended", () => {
-      videoOverlay.style.display = "flex";
-    });
   },
 
   initScrollAnimations() {
