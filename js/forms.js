@@ -135,7 +135,7 @@ const Forms = {
       return `
                 <div style="text-align: center;">
                     <p>Our comprehensive pitch deck showcases MedNote AI's technology, market opportunity, and growth strategy.</p>
-                    <a href="assets/pitch-deck.pdf" class="btn btn-primary" target="_blank" download>
+                    <a href="assets/pdfs/pitch-deck.pdf" class="btn btn-primary" target="_blank" download>
                         <i class="fas fa-download"></i> Download Pitch Deck
                     </a>
                 </div>
