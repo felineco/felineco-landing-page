@@ -46,7 +46,7 @@ const Forms = {
 
     // Send email using EmailJS
     emailjs
-      .sendForm("service_3utddsq", "template_o3wkces", contactForm)
+      .sendForm("service_3utddsq", "template_5iqb34f", contactForm)
       .then(() => {
         UI.showNotification(
           "Message sent successfully! We'll get back to you soon.",
@@ -174,7 +174,7 @@ const Forms = {
 
     // Send email using EmailJS with business template
     emailjs
-      .sendForm("service_3utddsq", "template_o3wkces", form) // Use different template
+      .sendForm("service_3utddsq", "template_5iqb34f", form) // Use different template
       .then(() => {
         UI.showNotification(
           `${
