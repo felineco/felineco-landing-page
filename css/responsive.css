@@ -107,6 +107,12 @@
         padding: var(--spacing-lg);
     }
 
+    /* Videos Grid */
+    .videos-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
     /* Footer */
     .footer-content {
         flex-direction: column;
